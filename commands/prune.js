@@ -1,8 +1,8 @@
 module.exports = {
 	name: 'prune',
-	description: 'Prune up to 99 messages.',
+	description: 'Prune messages.',
 	execute(message, args) {
-		const amount = parseInt(args[0]) + 1;
+		const amount = parseInt(args) + 1;
 
 		if (isNaN(amount)) {
 			return message.reply('that doesn\'t seem to be a valid number.');
