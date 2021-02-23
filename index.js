@@ -21,6 +21,7 @@ for (const file of commandFiles) {
 client.on('message', message => {
     if(!message.content.startsWith('!') || message.author.bot) return;
     if(message.content === "!help"){
+        message.react('😀')
         const embed = new Discord.MessageEmbed()
         .setTitle("Bot Commands");
         for(const commandnames of filelist) {
