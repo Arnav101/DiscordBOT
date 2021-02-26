@@ -1,6 +1,6 @@
 module.exports = {
-    name : "help",
-    description : "Help",
+    name : "ban",
+    description : "Ban a User",
     execute(message, args){
         
     }
