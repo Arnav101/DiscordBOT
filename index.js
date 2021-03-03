@@ -8,7 +8,7 @@ client.commands = new Discord.Collection();
 client.login(process.env.BOTTOKEN)
 client.on("ready", () => {
     console.log('Ready');
-    client.user.setActivity("Hello",{type: "LISTENING"})
+    client.user.setActivity("!help",{type: "LISTENING"})
 })
 let filelist = []
 const commandFiles = fs1.readdirSync('./commands').filter(file => file.endsWith('.js'));
